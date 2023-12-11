@@ -1,0 +1,78 @@
+<mvc:View controllerName="com.applexus.aggregationbinding.controller.TableControl"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:t="sap.ui.table"
+    xmlns:c="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <t:Table id="tb1" rows="{/empTable}" alternateRowColors="true" rowSelectionChange="fetchDetails" selectionMode="Single">
+                <t:columns>
+                    <t:Column id="c1">
+                        <Label id="l1" text="{i18n>idText}"/>
+                        <t:template>
+                            <Text id="t1" text="{empId}"/>
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="c2">
+                        <Label id="l2" text="Employee Name"/>
+                        <t:template>
+                            <Text id="t2" text="{ path: 'empName', formatter: '.customFormatter.formatName'}"/>
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="c3">
+                        <Label id="l3" text="Employee Salary"/>
+                        <t:template>
+                            <Text id="t3" text="{empSalary} {currency}"/>
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="c4">
+                        <Label id="l4" text="Smoker"/>
+                        <t:template>
+                            <c:Icon id="i1" src ="{= ${smoker}==='YES' ? 'sap-icon://accept' : 'sap-icon://decline'}"/>
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="c5">
+                        <Label id="l5" text="Gender"/>
+                        <t:template>
+                            <Image id="img1" src="{empGender}" width="20%"/>
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="c6">
+                        <Label id="l6" text="Marital Status"/>
+                        <t:template>
+                            <ComboBox id="cb1" value="{empMarital}">
+                                <items>
+                                    <c:Item id="it1" text="Married"/>
+                                    <c:Item id="it2" text="Un-Married"/>
+                                    <c:Item id="it3" text="Widow"/>
+                                    <c:Item id="it4" text="Widower"/>
+                                </items>
+                            </ComboBox> 
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="c7">
+                        <Label id="l7" text="Date Of Joining"/>
+                        <t:template>
+                            <DatePicker id="doj" value="{empDoj}"/>
+                        </t:template>
+                    </t:Column>
+                    <t:Column id="c8">
+                        <Label id="l8" text="Employee Rating"/>
+                        <t:template>
+                            <RatingIndicator id="rating" maxValue="5" value="{empRating}"/>
+                        </t:template>
+                    </t:Column>
+                </t:columns>
+            </t:Table>
+            <f:SimpleForm id="form1" title="{i18n>formTitle}" editable="true">
+                <VBox id="vb1">
+                    <Input id="in1" placeholder="Employee ID" value="{empId}" width="20%"/>
+                    <Input id="in2" placeholder="Employee Name" value="{empName}" width="20%"/>
+                    <Input id="in3" placeholder="Employee Salary" value="{ parts:[{ path: 'empSalary'},{path: 'currency'}], formatter: '.customFormatter.formatSalary'}" width="20%"/>
+                    <Input id="in4" placeholder="Employee DOJ" value="{ path: 'empDoj', formatter: '.customFormatter.formatDoj'}" width="20%" />
+                </VBox>
+            </f:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>

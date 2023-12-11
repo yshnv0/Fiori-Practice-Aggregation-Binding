@@ -1,0 +1,125 @@
+{
+    "empTable" : [
+        {
+            "empId"      : "001",
+            "empName"    : "Ajeesh",
+            "empSalary"  : "125000",
+            "currency"   : "INR",
+            "smoker"     : "YES",
+            "empGender"  : "../model/images/male.jpg",
+            "empMarital" : "Un-Married",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "4"
+        },
+        {
+            "empId"      : "002",
+            "empName"    : "Bimala",
+            "empSalary"  : "122000",
+            "currency"   : "USD",
+            "smoker"     : "NO",
+            "empGender"  : "../model/images/female.png",
+            "empMarital" : "Married",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "3"
+        },
+        {
+            "empId"      : "003",
+            "empName"    : "Charu",
+            "empSalary"  : "21000",
+            "currency"   : "INR",
+            "smoker"     : "YES",
+            "empGender"  : "../model/images/female.png",
+            "empMarital" : "Widow",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "3"
+        },
+        {
+            "empId"      : "004",
+            "empName"    : "Danish",
+            "empSalary"  : "28000",
+            "currency"   : "INR",
+            "smoker"     : "YES",
+            "empGender"  : "../model/images/male.jpg",
+            "empMarital" : "Widower",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "4"
+        },
+        {
+            "empId"      : "005",
+            "empName"    : "Divya",
+            "empSalary"  : "20000",
+            "currency"   : "INR",
+            "smoker"     : "YES",
+            "empGender"  : "../model/images/female.png",
+            "empMarital" : "Un-Married",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "2"
+        },
+        {
+            "empId"      : "006",
+            "empName"    : "Elsa",
+            "empSalary"  : "30000",
+            "currency"   : "INR",
+            "smoker"     : "YES",
+            "empGender"  : "../model/images/female.png",
+            "empMarital" : "Married",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "4"
+        },
+        {
+            "empId"      : "007",
+            "empName"    : "Fakru",
+            "empSalary"  : "29000",
+            "currency"   : "INR",
+            "smoker"     : "YES",
+            "empGender"  : "../model/images/male.jpg",
+            "empMarital" : "Un-Married",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "4"
+        },
+        {
+            "empId"      : "008",
+            "empName"    : "Gaya",
+            "empSalary"  : "23000",
+            "currency"   : "INR",
+            "smoker"     : "NO",
+            "empGender"  : "../model/images/female.png",
+            "empMarital" : "Un-Married",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "3"
+        },
+        {
+            "empId"      : "009",
+            "empName"    : "Hamsa",
+            "empSalary"  : "27000",
+            "currency"   : "INR",
+            "smoker"     : "NO",
+            "empGender"  : "../model/images/male.jpg",
+            "empMarital" : "Married",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "4"
+        },
+        {
+            "empId"      : "010",
+            "empName"    : "Haala",
+            "empSalary"  : "22000",
+            "currency"   : "JPY",
+            "smoker"     : "YES",
+            "empGender"  : "../model/images/female.png",
+            "empMarital" : "Un-Married",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "4"
+        },
+        {
+            "empId"      : "011",
+            "empName"    : "Imran",
+            "empSalary"  : "32000",
+            "currency"   : "EUR",
+            "smoker"     : "YES",
+            "empGender"  : "../model/images/male.jpg",
+            "empMarital" : "Un-Married",
+            "empDoj"     : "03-07-2023",
+            "empRating"  : "5"
+        }
+    ]
+}

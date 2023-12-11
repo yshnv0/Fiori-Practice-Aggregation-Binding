@@ -1,0 +1,26 @@
+<mvc:View controllerName="com.applexus.aggregationbinding.controller.List"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>listTitle}">
+    <OverflowToolbar id="ot1">
+        <SearchField id="sf1" liveChange=".onSearch">
+        <layoutData><OverflowToolbarLayoutData id="ofl1" maxWidth="300px" shrinkable="true" priority="NeverOverflow"/></layoutData>
+        </SearchField>
+        <OverflowToolbarButton id="otb1" tooltip="Delete" type="Transparent" icon="sap-icon://delete" press="onDeletePress"/>
+    </OverflowToolbar>
+        <List id="list" items="{
+            path:'fruit>/fruit'         
+            }"
+            mode="SingleSelect">
+            <ObjectListItem id="objli1" title="{fruit>name}"
+                number="{fruit>price}"
+                numberUnit="{fruit>curr}"
+                icon="{fruit>image}"
+                intro="{fruit>taste}"
+                type="Navigation"
+                press="onNavPress">
+            </ObjectListItem>
+        </List>
+    </Page>
+</mvc:View>

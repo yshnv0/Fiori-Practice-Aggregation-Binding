@@ -1,0 +1,20 @@
+<mvc:View controllerName="com.applexus.aggregationbinding.controller.Details"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core = "sap.ui.core">
+        <IconTabBar id="itb1">
+            <items>
+                <IconTabFilter id="itf1" text="Fruit Details" icon="sap-icon://information" >
+                    <core:Fragment fragmentName="com.applexus.aggregationbinding.fragment.Form" type="XML"/>
+                </IconTabFilter>
+                <IconTabSeparator id="its1"/>
+                <IconTabFilter id="itf2" text="Supplier" icon="sap-icon://collaborate" iconColor="Positive">
+                    <core:Fragment fragmentName="com.applexus.aggregationbinding.fragment.SupplierTable" type="XML"/>
+                </IconTabFilter>
+                <IconTabSeparator id="its2"/>
+                <IconTabFilter id="itf3" text="City" icon="sap-icon://functional-location" iconColor="Critical">
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+</mvc:View>

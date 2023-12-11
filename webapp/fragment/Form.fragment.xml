@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    <f:SimpleForm id="sform1" title="{i18n>detailsTitle}">
+                        <VBox id="vb1">
+                            <Input id="in1" placeholder="Fruit Name"      value="{fruit>name}" width="30%"/>
+                            <Input id="in2" placeholder="Fruit Color"     value="{fruit>color}" width="30%"/>
+                            <Input id="in3" placeholder="Fruit taste"     value="{fruit>taste}" width="30%"/>
+                            <Input id="in4" placeholder="Fruit Size"      value="{fruit>size}" width="30%"/>
+                            <Input id="in5" placeholder="Fruit Price"     value="{fruit>price} {fruit>curr}" width="30%"/>
+                            <Input id="in6" placeholder="Status"          value="{fruit>status}" width="30%"/>
+                            <Input id="in7" placeholder="Health Benefits" value="{fruit>healthbenefits}" width="30%"/>
+                        </VBox>
+                    </f:SimpleForm>
+</core:FragmentDefinition> 

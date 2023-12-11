@@ -1,0 +1,49 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Table id="table1" items="{
+            path:'fruit>/supplier'         
+            }">
+        <headerToolbar>
+            <OverflowToolbar id="oft1">
+                <OverflowToolbarButton id="oftb1" tooltip="Filter" type="Transparent" icon="sap-icon://filter" press="onFilter"/>
+            </OverflowToolbar>
+        </headerToolbar>
+        <columns>
+            <Column id="c1" width="12em">
+                <Text id="t1" text="Supplier Name"/>
+            </Column>
+            <Column id="c2" width="12em">
+                <Text id="t2" text="Since"/>
+            </Column>
+            <Column id="c3" minScreenWidth="Desktop">
+                <Text id="t3" text="Contact Number"/>
+            </Column>
+            <Column id="c4" minScreenWidth="Tablet">
+                <Text id="t4" text="Person"/>
+            </Column>
+            <Column id="c5" width="12em">
+                <Text id="t5" text="Number Of Stores"/>
+            </Column>
+            <Column id="c6" minScreenWidth="Tablet">
+                <Text id="t6" text="Speciality"/>
+            </Column>
+            <Column id="c7" minScreenWidth="Desktop">
+                <Text id="t11" text="City"/>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem id="cli1" vAlign="Middle">
+                <cells>
+                    <ObjectIdentifier id="obi1" title="{fruit>name}"/>
+                    <Text id="t7" text="{fruit>sincewhen}"/>
+                    <Text id="t8" text="{fruit>contactno}"/>
+                    <Link id="l1" text="{fruit>person}" subtle="true" press="onLinkPress"/>
+                    <Text id="t9" text="{fruit>nofstores}"/>
+                    <Text id="t10" text="{fruit>speciality}"/>
+                    <Input id="input1" type="Text" placeholder="City" valueHelpOnly="true" showValueHelp="true" valueHelpRequest="onValueHelpRequest"/>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition> 

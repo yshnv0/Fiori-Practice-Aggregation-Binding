@@ -1,0 +1,20 @@
+<mvc:View controllerName="com.applexus.aggregationbinding.controller.Welcome"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l = "sap.ui.layout"
+    xmlns:c = "sap.ui.core"
+    xmlns="sap.m">
+    	<Panel id="panel1" width="auto" class="sapUiResponsiveMargin" accessibleRole="Region">
+		<headerToolbar>
+			<OverflowToolbar id="oft1">
+				<Title id="t1" text="Welcome"/>
+			</OverflowToolbar>
+		</headerToolbar>
+		<content>
+			<l:HorizontalLayout id="h1">
+				<c:Icon id="img1" src="sap-icon://nutrition-activity" width="20em" />
+			</l:HorizontalLayout>
+			<Text id="txt1" text="Hello" />
+		</content>
+	</Panel>
+</mvc:View>
